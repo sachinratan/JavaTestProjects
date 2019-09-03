@@ -1,2 +1,2 @@
-# JavaTestProjects
-Java Test Projects For Jenkins Integration...
+Git Integration With Jenkins
+Testing Project.
