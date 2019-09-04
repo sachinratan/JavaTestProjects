@@ -1,2 +1,2 @@
 Git Integration With Jenkins
-Testing Project.
+Java Testing Project.
