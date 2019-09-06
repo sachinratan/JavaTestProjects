@@ -1,5 +1,9 @@
 <project>
     ...
+    <groupId>Testing</groupId>
+    <artifactId>Maven Test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
     <repositories>
         <repository>
             <id>myMavenRepoRead</id>
