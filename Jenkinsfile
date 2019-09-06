@@ -1,22 +1,32 @@
 pipeline {
-   agent any
+    agent any
 
-   stages {
-      stage('Build') {
-        steps {
-          echo 'Building...'
-          echo "Running ${env.BUILD_ID} ${env.BUILD_DISPLAY_NAME} on ${env.NODE_NAME} and JOB ${env.JOB_NAME}"
+    stages {
+        stage ('Compile Stage') {
+
+            steps {
+                withMaven(maven : 'maven_3_5_0') {
+                    sh 'mvn clean compile'
+                }
+            }
         }
-   }
-   stage('Test') {
-     steps {
-        echo 'Testing...'
-     }
-   }
-   stage('Deploy') {
-     steps {
-       echo 'Deploying...'
-     }
-   }
-  }
+
+        stage ('Testing Stage') {
+
+            steps {
+                withMaven(maven : 'maven_3_5_0') {
+                    sh 'mvn test'
+                }
+            }
+        }
+
+
+        stage ('Deployment Stage') {
+            steps {
+                withMaven(maven : 'maven_3_5_0') {
+                    sh 'mvn deploy'
+                }
+            }
+        }
+    }
 }
