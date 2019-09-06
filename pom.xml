@@ -9,22 +9,17 @@
     <artifactId>Maven-Test</artifactId>
     <version>1.0-SNAPSHOT</version>
     
-    <repositories>
+ <repositories>
         <repository>
-            <id>myMavenRepoRead</id>
-            <url>${myMavenRepoReadUrl}</url>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/SxuDVnQotT23ba76wYRc/</url>
         </repository>
     </repositories>
-    ...
+
     <distributionManagement>
         <repository>
-            <id>myMavenRepoWrite</id>
-            <url>${myMavenRepoWriteUrl}</url>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/0aNwd5pOhqFgXaAPYZOB/</url>
         </repository>
-        <snapshotRepository>
-            <id>myMavenRepoWrite</id>
-            <url>${myMavenRepoWriteUrl}</url>
-        </snapshotRepository>
     </distributionManagement>
-    ...
 </project>
