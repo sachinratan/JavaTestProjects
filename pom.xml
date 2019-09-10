@@ -11,14 +11,14 @@
     
  <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
+            <id>myMavenRepoRead</id>
             <url>https://mymavenrepo.com/repo/SxuDVnQotT23ba76wYRc/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
+            <id>myMavenRepoWrite</id>
             <url>https://mymavenrepo.com/repo/0aNwd5pOhqFgXaAPYZOB/</url>
         </repository>
     </distributionManagement>
